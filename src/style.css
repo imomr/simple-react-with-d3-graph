@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+* {
+  font-family: Roboto;
+}
+
+body,
+html {
+  height: 100%;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0f2027,
+    #203a43,
+    #2c5364
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0f2027,
+    #203a43,
+    #2c5364
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header-brand-name {
+  font-size: 35px;
+  color: #72abae;
+  font-weight: 900;
+  text-decoration: none;
+}
+.header-brand-name:hover {
+  font-size: 35px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-bar a {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.active:hover {
+  font-weight: bold;
+}
+
+.menu_active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 35px;
+  color: #fff;
+}
+h2 {
+  font-size: 30px;
+  color: #fff;
+}
+.style-btn {
+  width: 300px;
+  border-color: #fff;
+  color: #fff;
+}
+.style-btn:hover {
+  background-color: #84a9ac;
+  border-color: #84a9ac;
+}
+
+.brand-name {
+  color: #84a9ac;
+}
+
+@media only screen and (max-width: 990px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .custom-info-img {
+    padding-top: 110px;
+  }
+  .style-btn {
+    width: 90%;
+  }
+}
+
+.page {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+}
+/* simple - enter transition 300ms, exit 150ms */
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
